@@ -1,0 +1,86 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Заголовок */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Навигация */
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a:hover {
+    color: #e8491d;
+}
+
+/* Выделение бренда */
+#branding {
+    float: left;
+}
+
+#branding h1 {
+    margin: 0;
+}
+
+.highlight {
+    color: #e8491d;
+}
+
+/* Подвал */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Медиа запросы */
+@media (max-width: 768px) {
+    header #branding,
+    nav ul {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    nav ul li {
+        display: block;
+    }
+}
