@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Уроки</title>
+</head>
+<body>
+
+<!-- Форма "Уроки" с кнопкой для добавления нового урока -->
+<div id="lessons-form">
+    <h2>Уроки</h2>
+    <!-- Кнопка, которая будет вызывать форму "Новый урок" -->
+    <button onclick="document.getElementById('new-lesson-form').style.display='block'">Добавить урок</button>
+</div>
+
+<!-- Форма "Новый урок", изначально скрытая -->
+<div id="new-lesson-form" style="display:none;">
+    <h2>Новый урок</h2>
+    <form action="/submit-lesson" method="post">
+        <label for="lesson-title">Название урока:</label>
+        <input type="text" id="lesson-title" name="lesson-title" required><br><br>
+        <label for="lesson-content">Содержание урока:</label>
+        <textarea id="lesson-content" name="lesson-content" required></textarea><br><br>
+        <input type="submit" value="Сохранить урок">
+    </form>
+</div>
+
+<script>
+// Здесь можно добавить дополнительный JavaScript, если необходимо
+</script>
+
+</body>
+</html>
